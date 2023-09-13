@@ -1,0 +1,74 @@
+
+
+.header { grid-area: header; }
+
+.logo {height : 65px}
+
+.secciones {grid-area: secciones; ; display: flex;
+     flex-direction: row;}
+
+nav {display: flex; flex-direction: row; }
+
+.bg-body-tertiary {text-align: center; padding-left: 100px;}
+
+.carruseles {display: flex; justify-content: space-around;
+     flex-wrap: wrap;}
+
+.carousel_slide {display: flex; flex-wrap: wrap;}
+.carousel-item img {height: 350px; width: 500px; padding-bottom: 15px;}
+
+
+.header { background-color: #fff7f7; display:flex; display: grid;}
+.header h1 {display: flex; justify-content: center;}
+.header img {display: flex; justify-content: start;}
+
+ .nosotros p { font-size: 15px;}
+
+ .footer_container {display: flex; justify-content: space-between;}
+ .footer_container_nuevos {display: flex; justify-content: space-between;}
+
+ .ubicacion {position: absolute; padding-left: 15px;}
+ .ubicacion h4 {position: relative;}
+ .ubicacion iframe {height: 150px;  width: 150px;}
+
+ .novedades { padding-left:  250px; position: absolute;}
+ .novedades label {display: flex; align-items: baseline;} 
+ .sugerencias { justify-content: center; 
+padding-left: 600px; }
+.dropdown {padding-right: 150px;} 
+ 
+h3 { color: rgb(72, 61, 139);}
+
+.fotos_nuevos {display: flex; }
+
+.nuevos img {height: 370px; width: 500px;}
+.sugerencias_nuevos {padding-right: 210px;}
+
+
+@media only screen and (max-width: 576px) {
+
+     body { background-color: aqua;}
+ 
+     .fotos_nuevos {flex-wrap: wrap;}
+     .carousel-item img {width: 75%; }
+   p {width: 1em;}
+   .carruseles img {width: 75%}
+   h4 {width: 1em;}
+
+   footer {display: flex; }
+   .footer_container {display: flex;}
+   .footer_container_nuevos {display: flex; flex-direction: column;}
+   .novedades {display: flex; flex-direction: column;}
+   .sugerencias {display: flex; flex-direction: column;}
+   .dropdown {padding-bottom: 20px; display: flex; flex-direction: column;}
+   .fotos_nuevos {display: flex; flex-direction: column;}
+     .header {display: flex;}
+     .nuevos {display: flex; flex-direction: column;}
+     .nuevos img {width: 100%;}
+     .nuevos p {display: flex;text-align: center;}
+}
+
+@media only screen and (min-width: 992px) {
+
+     body {background-color: #fff7f7;}
+}
